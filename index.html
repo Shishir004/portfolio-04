@@ -1197,10 +1197,11 @@
 
   /* ─── RESUME DOWNLOAD ─── */
   function downloadResume() {
-    // Replace with your actual resume file link (Google Drive, S3, etc.)
-    const resumeUrl = 'https://drive.google.com/file/d/1ekSDdYdFLp7-KgLsWeQnxzxSafzdoCof/view?usp=drive_link';
-
-  }
+  const a = document.createElement('a');
+  a.href = 'https://drive.google.com/uc?export=download&id=1ekSDdYdFLp7-KgLsWeQnxzxSafzdoCof';
+  a.download = 'Shishir_Tiwari_Resume.pdf';
+  a.click();
+}
 </script>
 </body>
 </html>
